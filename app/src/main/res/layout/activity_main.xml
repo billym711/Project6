@@ -12,12 +12,6 @@
         android:id="@+id/fragmentContainerView"
         android:name="com.example.project5.MainFragment"
         android:layout_width="match_parent"
-        android:layout_height="263dp" />
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView2"
-        android:name="com.example.project5.TextFragment"
-        android:layout_width="match_parent"
-        android:layout_height="263dp" />
+        android:layout_height="match_parent" />
 
 </LinearLayout>

@@ -3,13 +3,4 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TextFragment">
-
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="match_parent"
-        android:layout_height="338dp"
-        android:ems="10"
-        android:hint="Write something"
-        android:inputType="text" />
-</FrameLayout>
+    tools:context=".TextFragment"/>

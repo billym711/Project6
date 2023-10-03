@@ -13,17 +13,17 @@
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="wrap_content"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="Source Language" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="Translation" />
 
     </LinearLayout>
 
@@ -33,51 +33,53 @@
         android:orientation="horizontal">
 
         <RadioGroup
+            android:id="@+id/radiogroup1"
             android:layout_width="156dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
             <RadioButton
-                android:id="@+id/radioButton17"
+                android:id="@+id/English"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="RadioButton" />
+                android:text="English" />
 
             <RadioButton
-                android:id="@+id/radioButton18"
+                android:id="@+id/Spanish"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="RadioButton" />
+                android:text="Spanish" />
 
             <RadioButton
-                android:id="@+id/radioButton19"
+                android:id="@+id/German"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="RadioButton" />
+                android:text="German" />
         </RadioGroup>
 
         <RadioGroup
+            android:id="@+id/radiogroup2"
             android:layout_width="159dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
             <RadioButton
-                android:id="@+id/radioButton20"
+                android:id="@+id/Spanish1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="RadioButton" />
+                android:text="Spanish" />
 
             <RadioButton
-                android:id="@+id/radioButton21"
+                android:id="@+id/German1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="RadioButton" />
+                android:text="German" />
 
             <RadioButton
-                android:id="@+id/radioButton22"
+                android:id="@+id/English1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="RadioButton" />
+                android:text="English" />
         </RadioGroup>
 
     </LinearLayout>
@@ -85,7 +87,15 @@
     <TextView
         android:id="@+id/textView8"
         android:layout_width="match_parent"
-        android:layout_height="288dp"
-        android:text="TextView" />
+        android:layout_height="321dp"
+        android:hint="Translation" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:ems="10"
+        android:hint="Write something..."
+        android:inputType="text" />
 
 </LinearLayout>
