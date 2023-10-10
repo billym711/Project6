@@ -1,4 +1,4 @@
-package com.example.project5
+package com.example.project6.tasks
 
 import org.junit.Test
 

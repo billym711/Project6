@@ -1,10 +1,8 @@
-package com.example.project5
+package com.example.project6.tasks
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-/**
- * Instantiates the main layout
- */
+import androidx.appcompat.app.AppCompatActivity
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

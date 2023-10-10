@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Project5"
+rootProject.name = "tasks_completed"
 include(":app")
