@@ -1,10 +1,13 @@
 package com.example.project6.tasks
 
 import android.content.Context
+import androidx.fragment.app.Fragment
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-
+/**
+ * Manages the structure of each task database.
+ */
 @Database(entities = [Task::class], version = 1, exportSchema = false)
 abstract class TaskDatabase : RoomDatabase() {
     abstract val taskDao: TaskDao

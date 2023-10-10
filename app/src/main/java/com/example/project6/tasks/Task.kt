@@ -1,9 +1,13 @@
 package com.example.project6.tasks
 
+import androidx.fragment.app.Fragment
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-
+/**
+ *
+ * Defines the primary key and additional columns of each Task, stored in a database
+ */
 @Entity(tableName = "task_table")
 data class Task(
     @PrimaryKey(autoGenerate = true)

@@ -1,18 +1,24 @@
 package com.example.project6.tasks
 
 import android.util.Log
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
-
+/**
+ * The main screen viewModel,
+ * where the user can view all currently available Tasks,
+ * update them, and delete them.
+ */
 class TasksViewModel(val dao: TaskDao) : ViewModel() {
     var newTaskName = ""
-    val tasks = dao.getAll()
+    var tasks = dao.getAll()
     private val _navigateToTask = MutableLiveData<Long?>()
     val navigateToTask: LiveData<Long?>
         get() = _navigateToTask
+
 
     fun addTask() {
         viewModelScope.launch {
@@ -20,7 +26,10 @@ class TasksViewModel(val dao: TaskDao) : ViewModel() {
             task.taskName = newTaskName
             task.taskDescription = newTaskName
             dao.insert(task)
-            _navigateToTask.value = taskId
+
+            if (tasks.value!!.size != 0) {
+                _navigateToTask.value = tasks.value!![0].taskId + 1
+            }
 
         }
 

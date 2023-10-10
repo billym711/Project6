@@ -1,12 +1,16 @@
 package com.example.project6.tasks
 
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
-
+/**
+ * Commands for updating and reading values from a database
+ *
+ */
 @Dao
 interface TaskDao {
     @Insert
